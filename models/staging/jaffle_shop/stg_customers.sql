@@ -6,7 +6,7 @@ with customers as (
         first_name,
         last_name
 
-    from learning.jaffle_shop_customers
+    from {{ source("learning", "jaffle_shop_customers") }}
 
 )
 

@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: learning
+    database: dbt_playground
+    tables:
+      - name: stripe_payments

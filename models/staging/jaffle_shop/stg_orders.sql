@@ -5,8 +5,7 @@ with orders as (
         user_id as customer_id,
         order_date,
         status
-
-    from learning.jaffle_shop_orders
+    from {{ source("learning", "jaffle_shop_orders") }}
 
 )
 
